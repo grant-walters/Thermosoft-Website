@@ -1,0 +1,57 @@
+/* Custom font */
+@font-face {
+	font-family: Prompt;
+	src: url(/assets/prompt/Prompt-Regular.ttf);
+}
+/* Bold, Italics, etc */
+@font-face {
+	font-family: Prompt;
+	src: url(/assets/prompt/Prompt-Bold.ttf);
+	font-weight: bold;
+}
+@font-face {
+	font-family: Prompt;
+	src: url(/assets/prompt/Prompt-Italic.ttf);
+	font-style: italic;
+}
+@font-face {
+	font-family: Prompt;
+	src: url(/assets/prompt/Prompt-BoldItalic.ttf);
+	font-style: italic;
+	font-weight: bold;
+}
+
+/* Theme color variables */
+:root {
+	--main-color: rgb(177, 177, 238);
+	--background-color: rgb(46, 45, 49);
+	--secondary-background: rgb(56, 55, 59);
+	--accent-color: rgb(33, 68, 114);
+	--font-color: rgb(186, 184, 202);
+}
+
+.jumbotron {
+	background-color: var(--main-color);
+	color: var(--background-color);
+	border-radius: 0 0 3px 3px;
+	box-shadow: 2px 3px 5px black;
+	font-weight: bold;
+}
+
+body {
+	background-color: var(--background-color);
+	font-family: Prompt;
+	color: var(--font-color);
+}
+
+.alt-bg {
+	background-color: var(--secondary-background);
+}
+
+.row {
+	padding: 30px 50px;
+}
+
+.fas {
+	color: var(--main-color);
+}
