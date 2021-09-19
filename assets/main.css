@@ -23,7 +23,7 @@
 
 /* Theme color variables */
 :root {
-	--main-color: rgb(177, 177, 238);
+	--main-color: #b288bd;
 	--background-color: rgb(46, 45, 49);
 	--secondary-background: rgb(56, 55, 59);
 	--accent-color: rgb(33, 68, 114);
@@ -54,4 +54,25 @@ body {
 
 .fas {
 	color: var(--main-color);
+}
+
+.img-thumbnail {
+	background-color: var(--font-color);
+	color: var(--background-color);
+	border: none;
+	height: auto;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img-thumbnail img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.img-thumbnail:hover {
+	width: 51%;
+	box-shadow: rgba(37, 37, 37, 0.911) 3px 3px;
 }
