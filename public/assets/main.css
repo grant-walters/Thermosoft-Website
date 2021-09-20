@@ -43,6 +43,7 @@ body {
 	background-color: var(--background-color);
 	font-family: Prompt;
 	color: var(--font-color);
+	font-size: 16px;
 }
 
 .alt-bg {
@@ -124,4 +125,8 @@ footer {
 	background-color: var(--main-color);
 	color: var(--background-color);
 	padding: 1%;
+}
+
+.bigdesc {
+	font-size: 20px;
 }
