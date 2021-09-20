@@ -2,13 +2,13 @@ const express = require("express")
 const path = require('path')
 // Create the express app
 const app = express();
-// Set EJS as the view engine for templates
-app.set("view engine","ejs")
-// Set the path for assets
-app.use(express.static(__dirname));
 
-app.get("/", (req,res) => {
-	res.render("pages/index")
+app.use(express.json());
+
+app.use('/assets', express.static(__dirname + '/public/assets'));
+
+app.use('/', function (req, res) {
+	res.sendFile(__dirname+'/public/pages/index.html');
 });
 
 app.listen(5000, () => {

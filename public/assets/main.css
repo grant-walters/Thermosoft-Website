@@ -26,7 +26,8 @@
 	--main-color: #b288bd;
 	--background-color: rgb(46, 45, 49);
 	--secondary-background: rgb(56, 55, 59);
-	--accent-color: rgb(33, 68, 114);
+	--accent-color: rgb(43, 85, 141);
+	--accent-color-2: rgb(30, 62, 104);
 	--font-color: rgb(186, 184, 202);
 }
 
@@ -64,6 +65,8 @@ body {
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
+	transition: all 0.2s;
+	box-shadow: rgba(37, 37, 37, 0.85) 3px 3px;
 }
 
 .img-thumbnail img {
@@ -75,4 +78,50 @@ body {
 .img-thumbnail:hover {
 	width: 51%;
 	box-shadow: rgba(37, 37, 37, 0.911) 3px 3px;
+}
+
+a {
+	color: var(--accent-color);
+}
+
+a:visited {
+	color: var(--accent-color);
+}
+
+a:hover {
+	color: var(--accent-color-2);
+}
+
+
+.navbar {
+  margin-bottom: 0;
+  background-color: var(--main-color);
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  position: sticky;
+  top: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+  color: var(--background-color) !important;
+  display: inline-block;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: var(--font-color) !important;
+  background-color: var(--background-color) !important;
+}
+
+.navbar-toggle {
+	border: none;
+	background-color: var(--background-color);
+}
+
+footer {
+	background-color: var(--main-color);
+	color: var(--background-color);
+	padding: 1%;
 }
