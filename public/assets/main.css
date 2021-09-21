@@ -63,7 +63,7 @@ body {
 	color: var(--background-color);
 	border: none;
 	height: auto;
-	width: 50%;
+	width: 75%;
 	margin-left: auto;
 	margin-right: auto;
 	transition: all 0.2s;
@@ -77,7 +77,7 @@ body {
 }
 
 .img-thumbnail:hover {
-	width: 51%;
+	width: 76%;
 	box-shadow: rgba(37, 37, 37, 0.911) 3px 3px;
 }
 
