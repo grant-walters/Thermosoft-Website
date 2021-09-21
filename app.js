@@ -3,9 +3,7 @@ const path = require('path')
 // Create the express app
 const app = express();
 
-app.use(express.json());
-
-app.use('/assets', express.static(__dirname + '/public/assets'));
+app.use(express.static('public'));
 
 app.use('/', function (req, res) {
 	res.sendFile(__dirname+'/public/pages/index.html');
